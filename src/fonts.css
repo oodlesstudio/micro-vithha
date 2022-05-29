@@ -59,6 +59,8 @@
 }
 .icon-Hamburger-Menu:before {
   content: "\e907";
+    color: var(--color-black);
+      font-size: 24px;
 }
 .icon-loan:before {
   content: "\e908";
