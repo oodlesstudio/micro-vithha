@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation, matchPath, useNavigate } from "react-router-dom";
 // Components
 
@@ -21,10 +21,11 @@ const SideBar = (props) => {
   }
 
   // route Re-Direct
-  if (path === "/") {
-    // navigate("/financial-report/bulk-voucher-posting");
-    navigate("/loan/loan-repayment");
-  }
+  useEffect(() => {
+    if (path === "/") {
+      navigate("/loan/loan-repayment");
+    }
+  });
 
   const activeLink = (arr) => {
     if (arr === path) {
