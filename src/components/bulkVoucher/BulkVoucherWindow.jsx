@@ -19,19 +19,20 @@ const options = [
 const BulkVoucherWindow = () => {
   // Table Data State Handle Function
 
-  const [voucherList, setVoucherList] = useState([{ voucher: "" }]);
+  const [voucherList, setVoucherList] = useState([{ voucher: 0 }]);
 
   const handleServiceRemove = (index) => {
     if (voucherList.length > 1) {
       const list = [...voucherList];
       list.splice(index, 1);
       setVoucherList(list);
-      console.log(list);
+      console.log(index);
     }
   };
 
-  const handleServiceAdd = () => {
-    setVoucherList([...voucherList, { voucher: "" }]);
+  const handleServiceAdd = (index) => {
+    setVoucherList([...voucherList, { voucher: index + 1 }]);
+    console.log(voucherList);
   };
 
   // Select Error
@@ -136,7 +137,7 @@ const BulkVoucherWindow = () => {
                           <input
                             type="text"
                             name="debitLedger"
-                            id="debitLedger"
+                            id={singleVoucher.voucher}
                             className="inputTextBox"
                             placeholder="Enter Debit Ledger"
                           />
@@ -150,7 +151,7 @@ const BulkVoucherWindow = () => {
                           <input
                             type="text"
                             name="creditLedger"
-                            id="creditLedger"
+                            id={singleVoucher.voucher}
                             className="inputTextBox"
                             placeholder="Enter Credit Ledger"
                           />
@@ -164,7 +165,7 @@ const BulkVoucherWindow = () => {
                           <input
                             type="text"
                             name="amount"
-                            id="amount"
+                            id={singleVoucher.voucher}
                             className="inputTextBox"
                             placeholder="Enter Amount"
                           />
@@ -181,15 +182,10 @@ const BulkVoucherWindow = () => {
                               changevoucherType();
                             }}
                             options={options}
-                            id="AssignedTo"
+                            id={singleVoucher.voucher}
                             classNamePrefix="reactSelectBox"
                             placeholder="Dropdown"
                           />
-                          {voucherType && (
-                            <p className="text-danger font-size9">
-                              Enter a correct input
-                            </p>
-                          )}
                         </div>
                       </div>
                     </td>
@@ -200,7 +196,7 @@ const BulkVoucherWindow = () => {
                           <input
                             type="text"
                             name="comment"
-                            id="comment"
+                            id={singleVoucher.voucher}
                             className="inputTextBox"
                             placeholder="Enter Comment"
                           />
@@ -216,7 +212,7 @@ const BulkVoucherWindow = () => {
                         >
                           <button
                             className="act-add-Btn"
-                            onClick={handleServiceAdd}
+                            onClick={() => handleServiceAdd(index)}
                           >
                             <img src={AddIcon} alt="AddIcon" />
                           </button>

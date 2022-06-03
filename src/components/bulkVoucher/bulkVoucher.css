@@ -706,7 +706,7 @@
 
 @media(max-width: 768px) {
   .tab-table {
-    width: 1000px !important;
+    width: 1200px !important;
   }
 
     .dispatchHistoryModal .tableBorderBox .table {
@@ -750,7 +750,7 @@
 
 @media(max-width: 375px) {
   .tab-table {
-    width: 1000px !important;
+    width: 1200px !important;
   }
 
   .attachmentModal .modal-dialog {
