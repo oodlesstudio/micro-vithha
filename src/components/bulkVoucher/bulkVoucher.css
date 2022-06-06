@@ -585,7 +585,7 @@
 
 .CRA-Carousal .CRA-Swiper {
   width: 90%;
-      margin: 0 auto;
+  margin: 0 auto;
 }
 
 
@@ -696,8 +696,8 @@
 }
 
 
-.dispatchHistoryModal .modal-header{
-      background-color: var(--modal-header);
+.dispatchHistoryModal .modal-header {
+  background-color: var(--modal-header);
 }
 
 .dispatchHistoryModal.defaultThemeModal .modal-content {
@@ -709,10 +709,10 @@
     width: 1200px !important;
   }
 
-    .dispatchHistoryModal .tableBorderBox .table {
-      width: 1000px !important;
-    }
-  
+  .dispatchHistoryModal .tableBorderBox .table {
+    width: 1000px !important;
+  }
+
 
   .attachmentModal .modal-dialog {
     width: 700px;
@@ -798,10 +798,10 @@
     width: 343px;
   }
 
-        .CRA-Carousal .CRA-Swiper {
-          width: 70%;
-          margin: 0 auto;
-        }
+  .CRA-Carousal .CRA-Swiper {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 @media(max-width:900px) {
@@ -921,9 +921,10 @@
 }
 
 
-.bulkVoucherBox .clientNameSelect{
-width: 100%;
+.bulkVoucherBox .clientNameSelect {
+  width: 100%;
 }
+
 .bulkVoucherBox .text-danger {
   position: absolute;
 }
@@ -940,27 +941,28 @@ width: 100%;
 .act-add-Btn {
   background: var(--color-green-box);
 }
+
 .act-remove-Btn {
   background: var(--color-secondary-light-defaut);
   margin-left: 6px;
 }
 
 
-.tabpadding{
+.tabpadding {
   padding: 0 6px;
   width: 200px;
-  
+
 }
 
 
 
 /* Buttons */
 
-.btnMobilePadding{
+.btnMobilePadding {
   margin-left: 6px;
 }
 
-.btnsBtmMobile{
+.btnsBtmMobile {
   margin-top: 24px;
 }
 
@@ -972,13 +974,104 @@ width: 100%;
 
 
 
+.table-head {
+  z-index: 999;
+}
+
+
+.table-responsive.tableContentBox.tableContentBox2 {
+  overflow-x: unset !important;
+  max-height: unset !important;
+}
+
+
+@media(max-width:1325px) {
+  .table-responsive.tableContentBox.tableContentBox2 {
+    overflow-x: auto !important;
+    min-height: 120px;
+  }
+}
+
+
+
+/* 
+
+@media(min-width:1314px) {
+  .position-unset {
+    position: unset !important;
+  }
+
+  .position-set {
+    position: relative !important;
+    width: 100% !important;
+    min-height: 100% !important;
+  }
+
+  .reactSelectBox2-container {
+    position: unset !important;
+  }
+
+
+
+  .reactSelectBox2__menu {
+    width: 188px !important;
+    position: absolute !important;
+  }
+
+
+  .table-responsive.tableContentBox.tableContentBox2 {
+    max-height: unset !important;
+  }
 
 
 
 
 
-/* .bulkBoxHeight{
-  min-height: 95vh;
-  overflow-x: scroll;
-  width: 100%;
+
+
+  .table-tr:nth-child(n) .reactSelectBox2__menu {
+    top: calc(94%) !important;
+
+  }
+
+  .table-tr:nth-child(1) .reactSelectBox2__menu {
+    top: 86px !important;
+
+  }
+
+  .table-tr:nth-child(2) .reactSelectBox2__menu {
+    top: 130px !important;
+  }
+
+  .table-tr:nth-child(3) .reactSelectBox2__menu {
+    top: 174px !important;
+  }
+
+  .table-tr:nth-child(4) .reactSelectBox2__menu {
+    top: 218px !important;
+  }
+
+  .table-tr:nth-child(5) .reactSelectBox2__menu {
+    top: 262px !important;
+  }
+
+  .table-tr:nth-child(6) .reactSelectBox2__menu {
+    top: 306px !important;
+  }
+
+  .table-tr:nth-child(7) .reactSelectBox2__menu {
+    top: 350px !important;
+  }
+
+  .table-tr:nth-child(8) .reactSelectBox2__menu {
+    top: 394px !important;
+  }
+
+  .table-tr:nth-child(9) .reactSelectBox2__menu {
+    top: 438px !important;
+  }
+
+  .table-tr:nth-child(10) .reactSelectBox2__menu {
+    top: 482px !important;
+  }
 } */

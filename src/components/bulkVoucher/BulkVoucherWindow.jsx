@@ -113,11 +113,11 @@ const BulkVoucherWindow = () => {
 
       {/* Log Box */}
       <div className=" newTicketLastTable bulkBoxHeight logBoxSection">
-        <div className="tableBorderBox bulkVoucherBox">
+        <div className="tableBorderBox bulkVoucherBox position-set">
           {/* Table */}
-          <div className="table-responsive tableContentBox">
+          <div className="table-responsive tableContentBox tableContentBox2">
             <table className="table tab-table table-striped table-hover table-borderless align-middle mb-0">
-              <thead>
+              <thead className="table-head">
                 <tr>
                   <th scope="col">Debit Ledger</th>
                   <th scope="col">Credit Ledger</th>
@@ -127,9 +127,9 @@ const BulkVoucherWindow = () => {
                   <th scope="col">Actions</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="table-body">
                 {voucherList.map((singleVoucher, index) => (
-                  <tr key={index}>
+                  <tr key={index} className="table-tr">
                     <td>
                       <div className=" tabpadding">
                         {/* debitLedger */}
@@ -183,7 +183,8 @@ const BulkVoucherWindow = () => {
                             }}
                             options={options}
                             id={singleVoucher.voucher}
-                            classNamePrefix="reactSelectBox"
+                            classNamePrefix="reactSelectBox2"
+                            className="position-unset"
                             placeholder="Dropdown"
                           />
                         </div>
