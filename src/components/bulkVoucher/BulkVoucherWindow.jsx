@@ -26,13 +26,11 @@ const BulkVoucherWindow = () => {
       const list = [...voucherList];
       list.splice(index, 1);
       setVoucherList(list);
-      console.log(index);
     }
   };
 
   const handleServiceAdd = (index) => {
     setVoucherList([...voucherList, { voucher: index + 1 }]);
-    console.log(voucherList);
   };
 
   // Select Error
@@ -119,11 +117,21 @@ const BulkVoucherWindow = () => {
             <table className="table tab-table table-striped table-hover table-borderless align-middle mb-0">
               <thead className="table-head">
                 <tr>
-                  <th scope="col">Debit Ledger</th>
-                  <th scope="col">Credit Ledger</th>
-                  <th scope="col">Amount</th>
-                  <th scope="col">Voucher Type</th>
-                  <th scope="col">Comment</th>
+                  <th scope="col" className="bulkTableHeader">
+                    Debit Ledger
+                  </th>
+                  <th scope="col" className="bulkTableHeader">
+                    Credit Ledger
+                  </th>
+                  <th scope="col" className="bulkTableHeader">
+                    Amount
+                  </th>
+                  <th scope="col" className="bulkTableHeader">
+                    Voucher Type
+                  </th>
+                  <th scope="col" className="bulkTableHeader">
+                    Comment
+                  </th>
                   <th scope="col">Actions</th>
                 </tr>
               </thead>

@@ -407,6 +407,12 @@
   border: none;
   padding: 0;
 } */
+
+
+.bulkTableHeader{
+  width: 18.7%;
+}
+
 @media (max-width: 768px) {
   .atmOptionsDropdown .dropdown-toggle {
     width: 24px;
@@ -524,6 +530,10 @@
     width: 50%;
     padding: 0 6px;
   }
+
+    .bulkTableHeader {
+      width: 18.3%;
+    }
 }
 
 
@@ -706,8 +716,12 @@
 
 @media(max-width: 768px) {
   .tab-table {
-    width: 1200px !important;
+    width: 830px !important;
   }
+
+    .bulkTableHeader {
+      width: 18.3%;
+    }
 
   .dispatchHistoryModal .tableBorderBox .table {
     width: 1000px !important;
@@ -750,7 +764,7 @@
 
 @media(max-width: 375px) {
   .tab-table {
-    width: 1200px !important;
+    width: 830px !important;
   }
 
   .attachmentModal .modal-dialog {
@@ -950,7 +964,7 @@
 
 .tabpadding {
   padding: 0 6px;
-  width: 200px;
+  /* width: 200px; */
 
 }
 
@@ -988,10 +1002,15 @@
 @media(max-width:1325px) {
   .table-responsive.tableContentBox.tableContentBox2 {
     overflow-x: auto !important;
-    min-height: 120px;
   }
 }
 
+
+@media (max-width:1325px) and (min-width:769px) {
+.newTicketLastTable .tableBorderBox .table {
+    width: 1200px;
+  }
+}
 
 
 /* 
