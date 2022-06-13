@@ -213,7 +213,7 @@ const BulkVoucherWindow = () => {
                       </div>
                     </td>
                     <td>
-                      <div>
+                      <div className="addRemoveDiv">
                         <OverlayTrigger
                           placement="top"
                           delay={{ show: 250, hide: 400 }}

@@ -413,6 +413,12 @@
   width: 18.7%;
 }
 
+.addRemoveDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .atmOptionsDropdown .dropdown-toggle {
     width: 24px;
@@ -1006,7 +1012,7 @@
 }
 
 
-@media (max-width:1325px) and (min-width:769px) {
+@media (max-width:900px) and (min-width:769px) {
 .newTicketLastTable .tableBorderBox .table {
     width: 1200px;
   }
